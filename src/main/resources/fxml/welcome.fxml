@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="anchorPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" stylesheets="@../css/default.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ghostCoder.invoicePro.controllers.WelcomeCtrl">
+   <children>
+      <BorderPane prefHeight="500.0" prefWidth="700.0">
+         <left>
+            <Pane prefHeight="500.0" prefWidth="291.0" styleClass="side-pane" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="175.0" fitWidth="179.0" layoutX="46.0" layoutY="150.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../assets/app_logo_light.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </left>
+         <center>
+            <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="40.0" layoutY="114.0" prefHeight="38.0" prefWidth="329.0" text="Thank You For Choosing InvoicePro">
+                     <font>
+                        <Font name="SansSerif Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="15.0" layoutY="160.0" prefHeight="78.0" prefWidth="379.0" text="Click On The Start Button To Setup Your Account!" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="startBtn" layoutX="133.0" layoutY="315.0" mnemonicParsing="false" onMouseClicked="#onClickStart" prefHeight="38.0" prefWidth="144.0" styleClass="menu-buttons" text="Start">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="ARROW_CIRCLE_RIGHT" size="18" styleClass="btnIcon" />
+                     </graphic>
+                     <font>
+                        <Font name="SansSerif Bold" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,153 @@
+.common-background{
+-fx-background-color: #FFFFFF;
+}
+
+.side-pane{
+    -fx-background-color: linear-gradient(to bottom left, #053D8B, #1164B0);
+}
+
+.side-nav{
+-fx-background-color: linear-gradient(to bottom left, #552586, #6A359C);
+}
+
+.side-nav-buttons{
+-fx-background-color: #1164B0;
+-fx-text-fill: #FFFFFF;
+-fx-background-radius: 15;
+}
+
+.side-nav-buttons:hover{
+-fx-border-color: #E2FCFF;
+-fx-border-radius: 15;
+}
+
+.menu-buttons{
+-fx-background-color:  #298BC8;
+-fx-background-radius: 25;
+-fx-text-fill: #FFFFFF;
+}
+
+.menu-buttons: hover{
+-fx-background-color:  #FFFFFF;
+-fx-background-radius: 25;
+-fx-border-radius: 25;
+-fx-border-color: #298BC8;
+-fx-text-fill: #298BC8;
+}
+
+.menu-buttons: hover .btnIcon{
+-fx-fill: #298BC8;
+}
+
+.btnIcon{
+-fx-fill: #FFFFFF;
+}
+
+.imageViewPort{
+-fx-border-color: #1164B0;
+-fx-border-width: 2;
+}
+
+/*styling for user form*/
+.input-fields{
+-fx-background-color: #FFFFFF;
+-fx-border-width: 0 0 1 0;
+-fx-border-color: #053D8B;
+-fx-prompt-text-fill: #1164B0;
+}
+
+.form-labels{
+-fx-text-fill: #053D8B;
+}
+
+.comboBox{
+-fx-background-color:FFFFFF;
+-fx-border-width: 0 0 1 0;
+-fx-border-color: #053D8B;
+}
+
+.comboBox .text{
+-fx-fill: #053D8B;
+}
+
+.horizontal-separator{
+-fx-background-color: #1164B0;
+}
+
+.form-icons{
+-fx-fill: #053D8B;
+}
+
+/*buttons*/
+
+.btn-success{
+-fx-background-color: #228B22;
+-fx-background-radius: 10;
+-fx-text-fill: #FFFFFF;
+}
+
+.btn-danger{
+-fx-background-color: #FE0002;
+-fx-background-radius: 10;
+-fx-text-fill: #FFFFFF;
+}
+
+.btn-success: hover{
+-fx-border-color: #E2FCFF;
+-fx-border-radius: 10;
+}
+
+.btn-danger: hover{
+-fx-border-color: #E2FCFF;
+-fx-border-radius: 10;
+}
+
+/*list views*/
+.list-view{
+-fx-border-color: #053D8B;
+-fx-border-radius: 5;
+}
+
+
+/*styling for menu pages*/
+.title-bar{
+-fx-background-color:  #552586;
+}
+
+
+.title-bar-text{
+-fx-text-fill: #FFFFFF;
+}
+
+.title-bar-icon{
+-fx-fill: #FFFFFF;
+}
+
+.settings-buttons{
+-fx-background-color: #FFFFFF;
+-fx-border-color: #1164B0;
+-fx-text-fill: #1164B0;
+-fx-border-radius: 10;
+-fx-background-radius: 10;
+}
+
+.settings-icons{
+-fx-fill: #1164B0;
+}
+
+.settings-buttons: hover{
+-fx-background-color: #1164B0;
+-fx-border-color: #E2FCFF;
+-fx-text-fill: #FFFFFF;
+-fx-border-radius: 10;
+}
+
+.settings-buttons: hover .settings-icons{
+-fx-fill: #FFFFFF;
+}
+
+.right-separator{
+-fx-border-width: 0 1 0 0;
+-fx-border-color: #3F7EB3;
+}
+

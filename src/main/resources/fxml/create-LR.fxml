@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="createLrPane" prefHeight="720.0" prefWidth="980.0" stylesheets="@../css/default.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ghostCoder.invoicePro.controllers.CreateLR">
+   <children>
+      <BorderPane prefHeight="720.0" prefWidth="980.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <VBox alignment="CENTER_LEFT" prefHeight="90.0" prefWidth="980.0" styleClass="title-bar" BorderPane.alignment="CENTER">
+               <children>
+                  <Label graphicTextGap="20.0" styleClass="title-bar-text" text="Create New LR Record">
+                     <font>
+                        <Font name="SansSerif Bold" size="36.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView glyphName="FILE_TEXT" size="36" styleClass="title-bar-icon" />
+                     </graphic>
+                     <VBox.margin>
+                        <Insets left="25.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+         </top>
+         <center>
+            <VBox prefHeight="631.0" prefWidth="980.0" spacing="5.0" styleClass="common-background" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="79.0" prefWidth="955.0" spacing="25.0" styleClass="common-background">
+                     <children>
+                        <Label alignment="TOP_LEFT" styleClass="form-labels" text="Select Consignor">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="USER" size="14" styleClass="form-icons" />
+                           </graphic>
+                        </Label>
+                        <ComboBox fx:id="consignor" prefWidth="350.0" styleClass="comboBox" />
+                        <Label styleClass="form-labels" text="Date">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="CALENDAR" size="14" styleClass="form-icons" />
+                           </graphic>
+                        </Label>
+                        <DatePicker fx:id="date" editable="false" styleClass="comboBox" />
+                     </children>
+                     <VBox.margin>
+                        <Insets left="25.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <Separator prefWidth="200.0" />
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="20.0" styleClass="common-background">
+                     <children>
+                        <Label styleClass="form-labels" text="LR No.">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="FILE_TEXT" size="14" styleClass="form-icons" />
+                           </graphic>
+                        </Label>
+                        <TextField fx:id="lrNo" prefWidth="110.0" styleClass="input-fields" />
+                        <Label styleClass="form-labels" text="Destinatin From">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="MAP_MARKER" size="14" styleClass="form-icons" />
+                           </graphic>
+                        </Label>
+                        <ComboBox fx:id="destinationFrom" editable="true" prefWidth="200.0" promptText="Select" styleClass="comboBox" />
+                        <Label styleClass="form-labels" text="Destination To">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="LOCATION_ARROW" size="14" styleClass="form-icons" />
+                           </graphic>
+                        </Label>
+                        <ComboBox fx:id="destinationTo" editable="true" prefWidth="200.0" promptText="Select " styleClass="comboBox" />
+                     </children>
+                     <padding>
+                        <Insets left="25.0" />
+                     </padding>
+                  </HBox>
+                  <Separator prefWidth="200.0" />
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="25.0" styleClass="common-background">
+                     <children>
+                        <Label styleClass="form-labels" text="Vehicle No.">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="TRUCK" size="14" styleClass="form-icons" />
+                           </graphic>
+                        </Label>
+                        <TextField fx:id="vehicleNo" prefWidth="250.0" styleClass="input-fields" />
+                        <Label styleClass="form-labels" text="Weight">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <ComboBox fx:id="weight" prefWidth="150.0" promptText="Select type" styleClass="comboBox" />
+                     </children>
+                     <padding>
+                        <Insets left="25.0" />
+                     </padding>
+                  </HBox>
+                  <Separator prefWidth="200.0" />
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="25.0" styleClass="common-background">
+                     <padding>
+                        <Insets left="25.0" />
+                     </padding>
+                     <children>
+                        <Label styleClass="form-labels" text="Package Details:">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="INBOX" size="14" styleClass="form-icons" />
+                           </graphic>
+                        </Label>
+                        <Label styleClass="form-labels" text="Quantity:">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="quantity" styleClass="input-fields" />
+                        <Label styleClass="form-labels" text="Type:">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <ComboBox fx:id="type" prefWidth="150.0" promptText="Select" styleClass="comboBox" />
+                     </children>
+                  </HBox>
+                  <Separator prefWidth="200.0" />
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="25.0" styleClass="common-background">
+                     <padding>
+                        <Insets left="25.0" />
+                     </padding>
+                     <children>
+                        <Label styleClass="form-labels" text="Invoice Number">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="FILES_ALT" size="14" styleClass="form-icons" />
+                           </graphic>
+                        </Label>
+                        <TextField fx:id="invoiceNo" styleClass="input-fields" />
+                     </children>
+                  </HBox>
+                  <ButtonBar prefHeight="40.0" prefWidth="200.0">
+                     <buttons>
+                        <Button fx:id="btnCreate" graphicTextGap="5.0" mnemonicParsing="false" onMouseClicked="#onCreateLrRecord" prefHeight="40.0" prefWidth="150.0" styleClass="btn-success" text="Create">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="CHECK" size="14" styleClass="btnIcon" />
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                     </buttons>
+                     <VBox.margin>
+                        <Insets right="50.0" />
+                     </VBox.margin>
+                  </ButtonBar>
+               </children>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
